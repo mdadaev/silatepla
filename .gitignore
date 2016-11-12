@@ -2,3 +2,12 @@
 !.gitignore
 !/local
 !/index.php
+!/manufacture
+!/map
+!/build
+!/ajax
+!/includes
+!/project
+!/projects
+!/.top.menu.php
+!/.bottom.menu.php

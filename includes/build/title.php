@@ -1,0 +1,1 @@
+Работаем<br><strong class="sect-one__bigtext">на площадке Заказчика</strong>

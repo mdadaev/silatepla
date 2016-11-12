@@ -1,0 +1,1 @@
+<img src="<?=SITE_TEMPLATE_PATH?>/images/content/srok-grid2.jpg" alt="компания Теплоконтроль промышленые котельные" class="green-bord__pictue">

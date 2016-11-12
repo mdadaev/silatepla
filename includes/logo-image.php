@@ -1,0 +1,1 @@
+<img alt="компания Теплоконтроль промышленые котельные" src="/local/templates/main/images/general/logo.png" class="logo__img">
