@@ -1,0 +1,3 @@
+<?
+$MESS['ESTA_MAIN_LOCALE_SETTINGS'] = array();
+$MESS['ESTA_MAIN_LOCALE_MESSAGES'] = array();
