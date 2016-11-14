@@ -13,7 +13,6 @@ $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/svg4everybody.
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/mainu29rl4bo6r.min.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/fotorama.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/jquery.maskedinput.min.js');
-$APPLICATION->AddHeadScript('//api-maps.yandex.ru/2.1/?lang=ru_RU');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/esta.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/template.js');
 
@@ -37,7 +36,7 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/separate-css/flexboxgr
 
 
     <!--[if (gt IE 9)|!(IE)]><!-->
-    <link href="css/mainu29rl4bo6r.min.css" rel="stylesheet" type="text/css">
+    <link href="<?=SITE_TEMPLATE_PATH?>/css/mainu29rl4bo6r.min.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->
 
     <? $APPLICATION->ShowHead() ?>

@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Компания теплоконтроль");
+$APPLICATION->AddHeadScript('//api-maps.yandex.ru/2.1/?lang=ru_RU');
 ?>
 <?$APPLICATION->IncludeComponent(
     "bitrix:news.list",
