@@ -12,7 +12,14 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                 <?if(!empty($arResult["PROPERTIES"]["PHOTO"]["VALUE"])){?>
                 <aside class="objects__left">
                     <div data-width="552" data-ratio="3/2" data-nav="thumbs" data-thumbborderwidth="5" data-thumbmargin="20" data-thumbwidth="170" data-thumbheight="120" data-fit="cover" class="fotorama">
-                        <? foreach ($arResult["PROPERTIES"]["PHOTO"]["VALUE"] as $key => $photo) {
+                        <? if( !empty($arResult['DETAIL_PICTURE']['SRC']) )
+                        {
+                            $photoResize = \CFile::ResizeImageGet($arResult['DETAIL_PICTURE']['ID'],array("width"=>550,"height"=>350),BX_RESIZE_IMAGE_EXACT)
+                            ?><a href="<?=$arResult['DETAIL_PICTURE']['SRC'];?>">
+                                <img src="<?=$photoResize['src']?>">
+                            </a><?
+                        }
+                        foreach ($arResult["PROPERTIES"]["PHOTO"]["VALUE"] as $key => $photo) {
                             $photoResize = \CFile::ResizeImageGet($photo,array("width"=>550,"height"=>350),BX_RESIZE_IMAGE_EXACT)?>
                             <a href="<?=\CFile::GetPath($photo);?>">
                                 <img src="<?=$photoResize['src']?>">

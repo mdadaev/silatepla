@@ -23,7 +23,6 @@ if (!$arResult['ITEMS']) {
     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
     $showLink = !$arParams['HIDE_LINK_WHEN_NO_DETAIL'] || ($arItem['DETAIL_TEXT'] && $arResult['USER_HAVE_ACCESS']);
 
-    $arItem["IMAGE"] = \CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]["ID"], array("width" => 545, "height" => 375), BX_RESIZE_IMAGE_EXACT);
 
     ?>
     <? if ($counter % 2 == 0 && $counter != 0){ ?>
@@ -35,8 +34,8 @@ if (!$arResult['ITEMS']) {
          id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
         <div class="green-bord">
             <div class="green-bord__picture-wrap">
-                <? if ($arItem["IMAGE"]) { ?>
-                    <img src="<?= $arItem["IMAGE"]["src"] ?>" alt="<?= $arItem["NAME"] ?>"
+                <? if (!empty($arItem["PREVIEW_PICTURE"])) { ?>
+                    <img src="<?= $arItem["PREVIEW_PICTURE"]["src"] ?>" alt="<?= $arItem["NAME"] ?>"
                          class="green-bord__picture-w100">
                 <? } ?>
 
