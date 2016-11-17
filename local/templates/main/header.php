@@ -30,7 +30,7 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/separate-css/flexboxgr
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic"
           rel="stylesheet"/>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/fav.ico">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
