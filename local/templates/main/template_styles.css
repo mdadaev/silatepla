@@ -6869,3 +6869,7 @@ body {
 .text-popup b {
     font-weight: bold;
 }
+
+.objects__left img {
+    max-width: 550px;
+}
