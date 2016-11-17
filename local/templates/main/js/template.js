@@ -109,6 +109,9 @@ esta.app.blocks.common = function()
 		catch (e) {
 			console.log(e);
 		}
+		
+		// учим ие понимать svg
+		svg4everybody();
 
 		firstInit = false;
 	};
