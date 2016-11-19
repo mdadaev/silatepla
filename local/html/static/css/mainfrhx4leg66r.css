@@ -1441,7 +1441,9 @@ body {
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated {
+
+
+/*.animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -1546,7 +1548,7 @@ body {
   animation-name: flash;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -1849,7 +1851,7 @@ body {
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes wobble {
   from {
     -webkit-transform: none;
@@ -3843,7 +3845,7 @@ body {
   animation-name: hinge;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes rollIn {
   from {
     opacity: 0;
@@ -3875,7 +3877,7 @@ body {
   animation-name: rollIn;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes rollOut {
   from {
     opacity: 1;
@@ -4505,7 +4507,7 @@ body {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
-}
+}*/
 
 .footer {
   padding: 50px 0 36px 0;

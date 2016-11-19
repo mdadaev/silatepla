@@ -10,7 +10,7 @@ if (defined('\Esta\Main\IS_AJAX') && \Esta\Main\IS_AJAX) {
 IncludeTemplateLangFile(__FILE__);
 
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/svg4everybody.min.js');
-$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/mainu29rl4bo6r.min.js');
+$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/mainu29rl4bo6r.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/fotorama.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/jquery.maskedinput.min.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/esta.js');
@@ -33,11 +33,6 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/separate-css/flexboxgr
     <link rel="icon" type="image/x-icon" href="/fav.ico">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <link href="<?=SITE_TEMPLATE_PATH?>/css/mainu29rl4bo6r.min.css" rel="stylesheet" type="text/css">
-    <!--<![endif]-->
 
     <? $APPLICATION->ShowHead() ?>
 
