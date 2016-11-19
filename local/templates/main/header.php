@@ -8,7 +8,7 @@ if (defined('\Esta\Main\IS_AJAX') && \Esta\Main\IS_AJAX) {
 }
 
 IncludeTemplateLangFile(__FILE__);
-
+/* JS */
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/svg4everybody.min.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/mainu29rl4bo6r.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/fotorama.js');
@@ -16,7 +16,7 @@ $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/separate-js/jquery.maskedi
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/esta.js');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/template.js');
 
-/* Add additional stylesheets */
+/* Additional CS */
 $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/separate-css/flexboxgrid.min.css');
 
 ?>
@@ -31,9 +31,7 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/separate-css/flexboxgr
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic"
           rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="/fav.ico">
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
     <? $APPLICATION->ShowHead() ?>
 
 </head>
