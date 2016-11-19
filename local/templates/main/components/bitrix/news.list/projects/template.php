@@ -35,7 +35,7 @@ if (!$arResult['ITEMS']) {
         <div class="green-bord">
             <div class="green-bord__picture-wrap">
                 <? if (!empty($arItem["PREVIEW_PICTURE"])) { ?>
-                    <img src="<?= $arItem["PREVIEW_PICTURE"]["src"] ?>" alt="<?= $arItem["NAME"] ?>"
+                    <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="<?= $arItem["NAME"] ?>"
                          class="green-bord__picture-w100">
                 <? } ?>
 
