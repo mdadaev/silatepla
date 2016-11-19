@@ -368,10 +368,13 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                     "SORT_ORDER2" => "ASC",
                     "FILTER_NAME" => "",
                     "FIELD_CODE" => array(
-                        0 => "ID",
-                        1 => "NAME",
+                        0 => "DETAIL_PICTURE",
+                        1 => "",
                     ),
-                    "PROPERTY_CODE" => array("PARAMETRS"),
+                    "PROPERTY_CODE" => array(
+                        0 => "PARAMETRS",
+                        1 => "",
+                    ),
                     "CHECK_DATES" => "Y",
                     "DETAIL_URL" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
@@ -409,8 +412,10 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                     "AJAX_OPTION_STYLE" => "Y",
                     "AJAX_OPTION_HISTORY" => "N",
                     "AJAX_OPTION_ADDITIONAL" => "",
-                    "COMPONENT_TEMPLATE" => ".default",
-                    "TITLE" => "Примеры наших проектов"
+                    "COMPONENT_TEMPLATE" => "projects",
+                    "TITLE" => "Примеры наших проектов",
+                    "PREVIEW_PICTURE_W" => "550",
+                    "PREVIEW_PICTURE_H" => "350"
                 ),
                 false
             );?>
