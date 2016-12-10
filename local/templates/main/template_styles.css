@@ -10,7 +10,8 @@ body {
     margin: 0;
     font-family: Arial, Tahoma;
     color: #1d1d1d;
-    font-size: 16px
+    font-size: 16px;
+    background-color: rgba(128, 128, 128,0.2);
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -908,7 +909,6 @@ legend, td, th {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    text-align: right
 }
 
 .lists-projects__item:nth-child(even) .lists-projects__round {
@@ -927,7 +927,8 @@ legend, td, th {
 
 .lists-projects__words {
     max-width: 646px;
-    letter-spacing: .025em
+    letter-spacing: .025em;
+    text-align: justify;
 }
 
 .projects__center-btn {
@@ -1616,7 +1617,8 @@ legend, td, th {
 
     .lists-projects__words {
         width: 100%;
-        max-width: 100%
+        max-width: 100%;
+        text-align: center;
     }
 
     .lists-projects__round {
@@ -1626,10 +1628,6 @@ legend, td, th {
     .lists-projects__item:nth-child(even) .lists-projects__round {
         margin-right: 0;
         margin-left: 0;
-        text-align: center
-    }
-
-    .lists-projects__item:nth-child(even) {
         text-align: center
     }
 

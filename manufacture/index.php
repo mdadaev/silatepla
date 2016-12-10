@@ -65,7 +65,7 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                 </a>
                 <a href="#kontakt-f" data-wow-duration="1s" data-wow-delay="3200ms"
                    class="btn btn_red sect-one__redbtn js-fan-windows wow fadeInRight">
-                    <b class="sect-one__btn-bold">узнайте стоимость?</b>Вашей котельной
+                    <b class="sect-one__btn-bold">узнайте стоимость</b>Вашей котельной
                 </a>
             </div>
 
