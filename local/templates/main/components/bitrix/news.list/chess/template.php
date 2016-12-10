@@ -33,7 +33,6 @@ if (!$arResult['ITEMS']) {
 		<?
         $counter++;
 	}
-	
 	if ($arParams['DISPLAY_BOTTOM_PAGER']) {
 		print $arResult['NAV_STRING'];
 	}
