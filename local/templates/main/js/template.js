@@ -338,13 +338,21 @@ esta.app.blocks.popupForm = function()
 };
 
 //кнопка Наверх
-var smoothJumpUp = function () {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 700);
-    }
-};
+$ (window).scroll (function () {
+	if ($ (this).scrollTop () > 300) {
+		$ ('.to-top').fadeIn();
+	} else {
+		$ ('.to-top').fadeOut();
+	}
+});
+
+$('.to-top').click(function(){
+	$('body,html').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
 
 
 /* Инициализация после готовности DOM */
