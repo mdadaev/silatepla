@@ -21,19 +21,22 @@ if (!$arResult['ITEMS']) {
         $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_EDIT'));
         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
         $showLink = !$arParams['HIDE_LINK_WHEN_NO_DETAIL'] || ($arItem['DETAIL_TEXT'] && $arResult['USER_HAVE_ACCESS']);
-        ?>
-        <?
+        ?><?
         if (is_array($arItem['PREVIEW_PICTURE'])) {
             ?>
             <div class="partners__item" id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
+                <? if ($arItem['PROPERTIES']['LINK']['VALUE']) { ?>
                 <a href="<?= $arItem['PROPERTIES']['LINK']['VALUE'] ?>" class="partners__logolink">
-                    <img class="partners__logo-pic" src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>"
-                         alt="<?= $arItem['NAME'] ?>"/>
+                    <? } ?>
+                    <img class="partners__logo-pic" src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="<?= $arItem['NAME'] ?>"/>
+                    <? if ($arItem['PROPERTIES']['LINK']['VALUE']) { ?>
                 </a>
+            <? } ?>
+
             </div>
         <? } ?>
 
-    <?
+        <?
     }
 
     if ($arParams['DISPLAY_BOTTOM_PAGER']) {

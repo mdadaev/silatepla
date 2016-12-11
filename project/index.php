@@ -12,7 +12,8 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                         'MODE' => 'php',
                         'NAME' => 'Заголовок',
                     )
-                )?>
+                )
+                ?>
 
             </h1>
             <ul class="sect-one__list">
