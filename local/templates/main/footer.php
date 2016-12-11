@@ -185,7 +185,7 @@ if (defined('\Esta\Main\IS_AJAX') && \Esta\Main\IS_AJAX) {
     false
 );?>
     </div>
-<div class="to-top">^</div>
+<div class="to-top to-top--hide">^</div>
 
 </body>
 </html>

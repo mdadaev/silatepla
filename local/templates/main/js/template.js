@@ -340,6 +340,7 @@ esta.app.blocks.popupForm = function()
 //кнопка Наверх
 $ (window).scroll (function () {
 	if ($ (this).scrollTop () > 300) {
+		$('.to-top').removeClass('to-top--hide');
 		$ ('.to-top').fadeIn();
 	} else {
 		$ ('.to-top').fadeOut();

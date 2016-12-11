@@ -5997,6 +5997,10 @@ legend, td, th {
     transition: background 0.3s;
 }
 
+.to-top--hide {
+    opacity: 0;
+}
+
 .to-top:hover {
     background: #cf1022;
 }
