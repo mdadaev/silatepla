@@ -16,39 +16,43 @@ if (!$arResult['ITEMS']) {
         print $arResult['NAV_STRING'];
     }
 
-    
+
     $counter = 0;
     foreach ($arResult['ITEMS'] as &$arItem) {
+
     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_EDIT'));
     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
     $showLink = !$arParams['HIDE_LINK_WHEN_NO_DETAIL'] || ($arItem['DETAIL_TEXT'] && $arResult['USER_HAVE_ACCESS']);
 
 
-    ?>
-    <? if ($counter % 2 == 0 && $counter != 0){ ?>
+    ?><? if ($counter % 2 == 0 && $counter != 0){ ?>
 </div>
 <div class="row we-do__block between-sm between-sm_grid">
     <? } ?>
-    <div data-wow-delay="500ms"
-         class="we-do__col-half wow <?= ($counter % 2 == 0) ? "fadeInLeft" : "fadeInRight" ?> "
-         id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
+    <div data-wow-delay="500ms" class="we-do__col-half wow <?= ($counter % 2 == 0) ? "fadeInLeft" : "fadeInRight" ?> " id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
         <div class="green-bord">
             <div class="green-bord__picture-wrap">
-                <? if (!empty($arItem["PREVIEW_PICTURE"])) { ?>
-                    <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="<?= $arItem["NAME"] ?>"
-                         class="green-bord__picture-w100">
-                <? } ?>
-
+                <?
+                if (!empty($arItem["PREVIEW_PICTURE"])) {
+                    $src = $arItem["PREVIEW_PICTURE"]['SRC'];
+                }
+                elseif( !empty($arItem['DETAIL_PICTURE']['SRC']) )
+                {
+                    $photoResize = \CFile::ResizeImageGet($arItem['DETAIL_PICTURE']['ID'],array("width"=>550,"height"=>350),BX_RESIZE_IMAGE_EXACT);
+                    $src = $photoResize['src'];
+                }
+                ?>
+                <img src="<?= $src ?>" alt="<?= $arItem["NAME"] ?>" class="green-bord__picture-w100">
                 <div class="green-bord__overlay">
                     <p class="green-bord__overlay-main-descr">
                         <b class="green-bord__bold"><?= $arItem["NAME"] ?></b>
                     </p>
-                    <?  if ($arItem["PROPERTIES"]["PARAMETRS"]["VALUE"]) {
+                    <? if ($arItem["PROPERTIES"]["PARAMETRS"]["VALUE"]) {
                         ?>
                         <div class="green-bord__flexwrap">
                             <? foreach ($arItem["PROPERTIES"]["PARAMETRS"]["VALUE"] as $key => $parametr) { ?>
-                                <div class="green-bord__line"><b
-                                        class="green-bord__name-descr"><?= $parametr ?></b>
+                                <div class="green-bord__line">
+                                    <b class="green-bord__name-descr"><?= $parametr ?></b>
 
                                     <p class="green-bord__name-full"><?= $arItem["PROPERTIES"]["PARAMETRS"]["DESCRIPTION"][$key] ?></p>
                                 </div>
@@ -56,7 +60,7 @@ if (!$arResult['ITEMS']) {
                         </div>
 
                     <? } ?>
-                    <a  href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn  we-do__redbtn btn_desciption">Описание</a>
+                    <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="btn  we-do__redbtn btn_desciption">Описание</a>
 
                 </div>
             </div>

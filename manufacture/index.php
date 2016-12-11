@@ -96,8 +96,7 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                         1 => "NAME",
                         2 => "SORT",
                         3 => "PREVIEW_TEXT",
-                        4 => "PREVIEW_PICTURE",
-                        5 => "",
+                        4 => "PREVIEW_PICTURE"
                     ),
                     "PROPERTY_CODE" => array(
                         0 => "LINK",
@@ -322,6 +321,7 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                     "FIELD_CODE" => array(
                         0 => "ID",
                         1 => "NAME",
+                        2 => "DETAIL_PICTURE"
                     ),
                     "PROPERTY_CODE" => array("PARAMETRS"),
                     "CHECK_DATES" => "Y",
