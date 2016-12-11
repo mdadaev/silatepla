@@ -185,5 +185,7 @@ if (defined('\Esta\Main\IS_AJAX') && \Esta\Main\IS_AJAX) {
     false
 );?>
     </div>
+<a onclick="smoothJumpUp(); return false;"><div class="to-top">^</div></a>
+
 </body>
 </html>

@@ -5981,6 +5981,26 @@ legend, td, th {
     text-align: right
 }
 
+.to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    padding-top: 10px;
+    background: #ed1b2e;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    transition: background 0.3s;
+}
+
+.to-top:hover {
+    background: #cf1022;
+}
+
 @media screen and (min-width: 45em) and (max-width: 1113px) {
     .header__vecpic {
         padding-right: 1.8%

@@ -337,7 +337,14 @@ esta.app.blocks.popupForm = function()
 	esta.ui.onInit(this.initDOM, this);
 };
 
-
+//кнопка Наверх
+var smoothJumpUp = function () {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+    }
+};
 
 
 /* Инициализация после готовности DOM */
