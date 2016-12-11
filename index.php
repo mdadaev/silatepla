@@ -422,7 +422,8 @@ $APPLICATION->IncludeComponent(
                     "AJAX_OPTION_HISTORY" => "N",
                     "AJAX_OPTION_ADDITIONAL" => "",
                     "COMPONENT_TEMPLATE" => ".default",
-                    "TITLE" => "Наши партнеры"
+                    "TITLE" => "Наши партнеры",
+                    "SECTION" => "COMPANY"
                 ),
                 false
             );?>

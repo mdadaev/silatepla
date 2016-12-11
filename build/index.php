@@ -122,7 +122,8 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
                     "AJAX_OPTION_HISTORY" => "N",
                     "AJAX_OPTION_ADDITIONAL" => "",
                     "COMPONENT_TEMPLATE" => ".default",
-                    "TITLE" => "Наши заказчики"
+                    "TITLE" => "Наши заказчики",
+                    "SECTION" => "BUILD"
                 ),
                 false
             );?>

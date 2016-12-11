@@ -167,12 +167,14 @@ $('.center-slider').slick({
 
 
 $('.partners__wrap ').slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  arrows: false,
-  slidesToShow: 6,
-  slidesToScroll: 6,
+    slidesToShow: 6,
+    arrows: true,
+    slidesToScroll: 6,
+    infinite: true,
+    nextArrow: '<button type="button" class="slick-next">&rsaquo;</button>',
+    prevArrow:'<button type="button" class="slick-prev">&lsaquo;</button>',
+    dots: false,
+    arrows: true,
   responsive: [
     {
       breakpoint: 1000,
