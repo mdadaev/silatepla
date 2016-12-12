@@ -26,7 +26,7 @@ if (!$arResult['ITEMS']) {
             ?>
             <div class="partners__item" id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
                 <? if ($arItem['PROPERTIES']['LINK']['VALUE']) { ?>
-                <a href="<?= $arItem['PROPERTIES']['LINK']['VALUE'] ?>" class="partners__logolink">
+                <a href="<?= $arItem['PROPERTIES']['LINK']['VALUE'] ?>" class="partners__logolink" target="_blank">
                     <? } ?>
                     <img class="partners__logo-pic" src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="<?= $arItem['NAME'] ?>"/>
                     <? if ($arItem['PROPERTIES']['LINK']['VALUE']) { ?>
