@@ -8,9 +8,9 @@ if (!$arResult['ITEMS']) {
 }
 ?>
 
-<h2 class="h-title we-do__h-title wow fadeInDown"><?= $arParams["TITLE"] ?></h2>
+<h2 class="h-title we-do__h-title wow fadeInDown "><?= $arParams["TITLE"] ?></h2>
 
-<div class="row we-do__block between-sm between-sm_grid">
+<div class="row we-do__block between-sm between-sm_grid projects-blocks">
     <?
     if ($arParams['DISPLAY_TOP_PAGER']) {
         print $arResult['NAV_STRING'];

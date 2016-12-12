@@ -587,9 +587,12 @@ legend, td, th {
 
 .green-bord {
     position: relative;
-    padding: 20px 0
+    padding: 20px 0;
 }
+.projects-blocks .green-bord {
 
+    height: 100%;
+}
 .green-bord:after, .green-bord:before {
     content: "";
     position: absolute;
@@ -1078,12 +1081,13 @@ legend, td, th {
 }
 
 .green-bord__picture-wrap {
-    border: 5px solid #fff;
-    width: 100%;
-    font-size: 0;
-    position: relative;
-    box-shadow: 0 0 29px rgba(14, 44, 31, .31)
-}
+     border: 5px solid #fff;
+     width: 100%;
+     font-size: 0;
+     position: relative;
+     box-shadow: 0 0 29px rgba(14, 44, 31, .31);
+     height: 100%;
+ }
 
 .reviews-sec {
     padding: 0 0 66px;
