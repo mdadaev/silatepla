@@ -1773,6 +1773,10 @@ legend, td, th {
     .objects__descr {
         font-size: 16px
     }
+    li.sect-one__list-item__half {
+        width: 100%;
+        margin-left: 0%;
+    }
 }
 
 @media only screen and (max-width: 45em) {
@@ -6049,6 +6053,20 @@ legend, td, th {
         margin-right: 0;
         width: -webkit-calc(100% + 40px);
         width: calc(100% + 40px)
+    }
+    .sect-one_manufacture {
+        background-size:cover;
+    }
+
+    .sect-one_manufacture__mintext {
+        font-size: 14px;
+        margin: 7px 0 0px;
+        line-height: 18px;
+    }
+    .sect-one_manufacture__bigtext {
+        font-size: 20px;
+        margin: 14px 0 3px;
+        line-height: 22px;
     }
 }
 
