@@ -2,36 +2,83 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Компания теплоконтроль");
 ?>
-    <section class="sect-one white-color">
-        <div class="container1-my">
-            <h2 data-wow-duration="2s" data-wow-delay="3s" class="h-title sect-one__title wow fadeInDown">
-                <?$APPLICATION->IncludeFile(
-                    '/includes/index/title.php',
-                    array(),
-                    array(
-                        'MODE' => 'php',
-                        'NAME' => 'Заголовок',
-                    )
-                )?>
-            </h2>
-            <?$APPLICATION->IncludeFile(
-                '/includes/index/benefits.php',
-                array(),
-                array(
-                    'MODE' => 'php',
-                    'NAME' => 'Преимущества',
-                )
-            )?>
-            <div class="sect-one__buttons"><a href="#kontakt-f" data-wow-duration="1s" data-wow-delay="3200ms"
-                                              class="btn btn_green sect-one__greenbtn js-fan-windows wow fadeInLeft"><b
-                        class="sect-one__btn-bold">Узнайте, сколько будет стоить</b>проект Вашей котельной</a>
-                <a
-                    href="#kontakt-f" data-wow-duration="1s" data-wow-delay="3200ms"
-                    class="btn btn_red sect-one__redbtn js-fan-windows wow fadeInRight"><b class="sect-one__btn-bold">Собираетесь
-                        строить котельную?</b>Обсудите с нами цену и сроки</a>
-            </div>
-        </div>
-    </section>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.detail", 
+	"screens",
+	array(
+		"DISPLAY_DATE" => "N",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "N",
+		"USE_SHARE" => "Y",
+		"SHARE_HIDE" => "N",
+		"SHARE_TEMPLATE" => "",
+		"SHARE_HANDLERS" => array(
+			0 => "delicious",
+		),
+		"SHARE_SHORTEN_URL_LOGIN" => "",
+		"SHARE_SHORTEN_URL_KEY" => "",
+		"AJAX_MODE" => "N",
+		"IBLOCK_TYPE" => "content",
+		"IBLOCK_ID" => "17",
+		"ELEMENT_ID" => "",
+		"ELEMENT_CODE" => "MAIN",
+		"CHECK_DATES" => "Y",
+		"FIELD_CODE" => array(
+			0 => "NAME",
+			1 => "DETAIL_PICTURE",
+			2 => "",
+		),
+		"PROPERTY_CODE" => array(
+			0 => "TITLE",
+			1 => "SUB_TITLE_FIRST",
+			2 => "SUB_TITLE_SECOND",
+			3 => "BENEFITS",
+			4 => "BENEFITS_COLUMNS",
+			5 => "",
+		),
+		"IBLOCK_URL" => "",
+		"DETAIL_URL" => "",
+		"SET_TITLE" => "N",
+		"SET_CANONICAL_URL" => "N",
+		"SET_BROWSER_TITLE" => "N",
+		"BROWSER_TITLE" => "-",
+		"SET_META_KEYWORDS" => "N",
+		"META_KEYWORDS" => "-",
+		"SET_META_DESCRIPTION" => "N",
+		"META_DESCRIPTION" => "-",
+		"SET_STATUS_404" => "N",
+		"SET_LAST_MODIFIED" => "Y",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"USE_PERMISSIONS" => "N",
+		"GROUP_PERMISSIONS" => array(
+			0 => "1",
+		),
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "3600",
+		"CACHE_GROUPS" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Страница",
+		"PAGER_TEMPLATE" => "",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"SHOW_404" => "N",
+		"MESSAGE_404" => "",
+		"PAGER_BASE_LINK" => "",
+		"PAGER_PARAMS_NAME" => "arrPager",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "N",
+		"AJAX_OPTION_HISTORY" => "N",
+		"COMPONENT_TEMPLATE" => ".default",
+		"AJAX_OPTION_ADDITIONAL" => ""
+	),
+	false
+);?>
+
 <?
 $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
