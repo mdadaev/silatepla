@@ -102,6 +102,7 @@ wow.init();*/
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 
+
 $(".js-fan-windows").fancybox({
 
 		closeClick	: false,

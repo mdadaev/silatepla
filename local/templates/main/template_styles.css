@@ -178,7 +178,9 @@ table {
 legend, td, th {
     padding: 0
 }
-
+.hidden{
+    display: none!important;
+}
 .fonts-loaded body {
     font-family: 'Open Sans', sans-serif
 }
@@ -6220,7 +6222,7 @@ legend, td, th {
     margin-top: -18px;
     cursor: pointer;
     z-index: 8040;
-    visibility: hidden
+    visibility: visible;
 }
 
 .fancybox-prev span {

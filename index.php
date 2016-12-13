@@ -357,7 +357,7 @@ $APPLICATION->IncludeComponent(
         ),
         "PROPERTY_CODE" => array(
             0 => "LINK",
-            1 => "",
+            1 => "ADD_PHOTO",
         ),
         "CHECK_DATES" => "Y",
         "DETAIL_URL" => "",

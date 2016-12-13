@@ -11,6 +11,7 @@ if (!$arResult['ITEMS']) {
 <div class="section dosc white-color">
     <div class="container1-my">
         <h2 data-wow-delay="500ms" class="h-title h-title__dosc wow fadeInDown">наши документы</h2>
+
         <div class="slider center-slider slider-docs">
             <?
             if ($arParams['DISPLAY_TOP_PAGER']) {
@@ -25,13 +26,30 @@ if (!$arResult['ITEMS']) {
                 <?
                 if (is_array($arItem['PREVIEW_PICTURE'])) {
                     ?>
-                    <div class="slider-docs__item" id="<?=$this->GetEditAreaId($arItem['ID'])?>">
-                        <a href="<?= ($arItem['DETAIL_PICTURE']['SRC'])?$arItem['DETAIL_PICTURE']['SRC']:$arItem['PREVIEW_PICTURE']['SRC'] ?>" rel="docs" class="slider-docs__link fancybox fancybox">
-                            <img src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="<?= $arItem['NAME'] ?>" class="slider-docs__pictue">
+                    <div class="slider-docs__item" id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
+                        <a href="<?= ($arItem['DETAIL_PICTURE']['SRC']) ? $arItem['DETAIL_PICTURE']['SRC'] : $arItem['PREVIEW_PICTURE']['SRC'] ?>"
+                           rel="docs" class="slider-docs__link fancybox ">
+                            <img src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="<?= $arItem['NAME'] ?>"
+                                 class="slider-docs__pictue">
                         </a>
+                        <?if (!empty($arItem["PROPERTIES"]['ADD_PHOTO'])) {
+                            foreach ($arItem["PROPERTIES"]['ADD_PHOTO']['VALUE'] as $photo) {
+                                $photoSrc = CFile::GetPath($photo);
+                                ?>
+
+                                <a c href="<?=$photoSrc?>"
+                                   rel="docs" class=" hidden  fancybox ">
+
+                                </a>
+
+                            <?
+                            }
+                        }?>
                     </div>
 
-                <? } ?>
+                <?
+                }
+                ?>
 
             <?
             }
