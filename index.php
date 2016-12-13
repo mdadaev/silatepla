@@ -353,7 +353,7 @@ $APPLICATION->IncludeComponent(
             2 => "SORT",
             3 => "PREVIEW_TEXT",
             4 => "PREVIEW_PICTURE",
-            5 => "",
+            5 => "DETAIL_PICTURE",
         ),
         "PROPERTY_CODE" => array(
             0 => "LINK",
