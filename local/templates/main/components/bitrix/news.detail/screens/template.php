@@ -11,8 +11,12 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+$class = 'sect-one__project';
+if(strlen($arParams["IMG_CLASS"])) {
+    $class = $arParams["IMG_CLASS"];
+}
 ?>
-<section class="sect-one sect-one__project  white-color"
+<section class="sect-one <?=$class?> white-color"
          style="background: url(<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>")">
 <div class="container1-my">
     <h2 data-wow-duration="2s" data-wow-delay="3s" class="h-title sect-one__title wow fadeInDown">
