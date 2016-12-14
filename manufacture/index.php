@@ -75,7 +75,7 @@ $APPLICATION->SetTitle("Компания теплоконтроль");
         "AJAX_OPTION_HISTORY" => "N",
         "COMPONENT_TEMPLATE" => ".default",
         "AJAX_OPTION_ADDITIONAL" => "",
-        "IMG_CLASS" => "sect-one__project"
+        "IMG_CLASS" => "sect-one_manufacture"
     ),
     false
 );?>
