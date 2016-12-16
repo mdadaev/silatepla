@@ -7,7 +7,10 @@ if (!$arResult['ITEMS']) {
 	return;
 }
 ?>
-<section class="objects-sec">
+<? if($arParams["SHOW_BORDER_TOP"] == "N") { ?>
+    <div class="redbord-top"></div>
+<? } ?>
+<section class="<?=$arParams["SHOW_BORDER_TOP"] != "N" ? 'objects-sec' : 'objects-sec__no-border' ?>">
     <div class="container1-my">
         <h2 class="h-title objects-sec__h-title wow fadeInDown">карта объектов</h2>
         <div class="map">

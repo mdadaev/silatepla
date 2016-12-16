@@ -9,7 +9,7 @@ if (!$arResult['ITEMS']) {
 ?>
 
 
-
+<div class="redbord-top"></div>
 <h2 data-wow-delay="500ms" class="h-title reviews-se__h-title wow fadeInDown"><?= $arParams["TITLE"] ?></h2>
 
 <div class="reviews">

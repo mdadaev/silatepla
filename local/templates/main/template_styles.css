@@ -1308,6 +1308,10 @@ legend, td, th {
     border-top: 5px solid #ed1b2e
 }
 
+.objects-sec__no-border {
+    padding: 20px 0 65px;
+}
+
 .objects__fxwrap {
     display: -webkit-box;
     display: -webkit-flex;
