@@ -1787,6 +1787,11 @@ legend, td, th {
         width: 100%;
         margin-left: 0%;
     }
+
+    .sect-one__list-item__half:last-of-type {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 45em) {
@@ -6094,7 +6099,7 @@ legend, td, th {
     }
 
     .btn_mini-mob {
-        padding: 7px 22px;
+        padding: 7px 22px 7px 20px;
         margin-right: 9px
     }
 
