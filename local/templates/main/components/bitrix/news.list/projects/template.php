@@ -32,17 +32,9 @@ if (!$arResult['ITEMS']) {
     <div data-wow-delay="500ms" class="we-do__col-half wow <?= ($counter % 2 == 0) ? "fadeInLeft" : "fadeInRight" ?> " id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
         <div class="green-bord">
             <div class="green-bord__picture-wrap">
-                <?
-                if (!empty($arItem["PREVIEW_PICTURE"])) {
-                    $src = $arItem["PREVIEW_PICTURE"]['SRC'];
-                }
-                elseif( !empty($arItem['DETAIL_PICTURE']['SRC']) )
-                {
-                    $photoResize = \CFile::ResizeImageGet($arItem['DETAIL_PICTURE']['ID'],array("width"=>550,"height"=>350),BX_RESIZE_IMAGE_EXACT);
-                    $src = $photoResize['src'];
-                }
-                ?>
-                <img src="<?= $src ?>" alt="<?= $arItem["NAME"] ?>" class="green-bord__picture-w100">
+                <? if($arItem["PREVIEW_PICTURE"]["SRC"]) { ?>
+                    <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="<?= $arItem["NAME"] ?>" class="green-bord__picture-w100">
+                <? } ?>
                 <div class="green-bord__overlay">
                     <p class="green-bord__overlay-main-descr">
                         <b class="green-bord__bold"><?= $arItem["NAME"] ?></b>
@@ -61,7 +53,6 @@ if (!$arResult['ITEMS']) {
 
                     <? } ?>
                     <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="btn  we-do__redbtn btn_desciption">Описание</a>
-
                 </div>
             </div>
         </div>
