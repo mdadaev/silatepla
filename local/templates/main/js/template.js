@@ -135,8 +135,8 @@ esta.app.blocks.map = function()
     var placeMarks = $(".js-placemark");
         ymaps.ready(function () {
             var myMap = new ymaps.Map('bigmap', {
-                    center: [61.69607760308009,96.36315571388933],
-                    zoom: 3,
+                    center: [52.70607760308009,58.36315571388933],
+                    zoom: 4,
                     controls: ['zoomControl', 'typeSelector',  'fullscreenControl']
                 }, {
                     searchControlProvider: 'yandex#search'
@@ -152,7 +152,7 @@ esta.app.blocks.map = function()
                 }, {
                     iconLayout: 'default#image',
                     // Своё изображение иконки метки.
-                    iconImageHref: '/local/templates/main/images/general/baloon.png',
+                    iconImageHref: '/local/templates/main/images/general/marker.png',
                     // Размеры метки.
                     iconImageSize: [27, 34],
                     // Смещение левого верхнего угла иконки относительно

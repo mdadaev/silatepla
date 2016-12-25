@@ -2,7 +2,7 @@
     <use xlink:href="<?=SITE_TEMPLATE_PATH?>/svg-symbolsu29rl4bo6r.svg#expertiza"></use>
 </svg>
 
-<p class="timing-lists__text">Экспертиза проектной документации<br>– от 1 мес до 3 мес</p>
+<p class="timing-lists__text">Экспертиза проектной документации<br>– от 1 мес до 8 мес</p>
 <a href="#projects_st_2" class="btn btn_red btn_redtiming js-fan-windows">Сроки экспертизы? </a>
 
 <div style="display: none">

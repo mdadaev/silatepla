@@ -161,7 +161,7 @@ $APPLICATION->AddHeadScript('//api-maps.yandex.ru/2.1/?lang=ru_RU', true);
     <section class="main-pad projects white-color">
         <div class="container1-my">
             <h2 class="h-title projects__h-title wow fadeInDown">Наши проектные решения &#60;-&#62; оптимальная
-                стоимость Вашей котельной.</h2>
+                стоимость Вашей котельной</h2>
 
             <h3 class="h-title projects__mini-title wow fadeInDown">За счет чего?</h3>
             <?$APPLICATION->IncludeComponent(
