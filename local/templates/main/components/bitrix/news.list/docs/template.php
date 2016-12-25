@@ -34,14 +34,11 @@ if (!$arResult['ITEMS']) {
                         </a>
                         <?if (!empty($arItem["PROPERTIES"]['ADD_PHOTO'])) {
                             foreach ($arItem["PROPERTIES"]['ADD_PHOTO']['VALUE'] as $photo) {
-                                $photoSrc = CFile::GetPath($photo);
                                 ?>
-
-                                <a c href="<?=$photoSrc?>"
+                                <a href="<?=$photo?>"
                                    rel="docs" class=" hidden  fancybox ">
 
                                 </a>
-
                             <?
                             }
                         }?>
