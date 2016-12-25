@@ -35,7 +35,7 @@ if (!$arResult['ITEMS']) {
                         <?if (!empty($arItem["PROPERTIES"]['ADD_PHOTO'])) {
                             foreach ($arItem["PROPERTIES"]['ADD_PHOTO']['VALUE'] as $photo) {
                                 ?>
-                                <a href="<?=$photo?>"
+                                <a href="<?=$photo['src']?>"
                                    rel="docs" class=" hidden  fancybox ">
 
                                 </a>
