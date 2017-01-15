@@ -5838,6 +5838,7 @@ section.build-withkey_onbuildpage {
     display: inline-block;
     margin-bottom: 41px;
     color: transparent;
+    width: 100%;
 }
 
 .footer__logotext {
