@@ -432,7 +432,7 @@ legend, td, th {
 }
 
 .experience {
-    background: url(images//general/bg_experience.jpg) no-repeat 0 0;
+    background: url(images/general/exp2-min.jpg) no-repeat 0 0;
     background-size: cover;
     text-align: center;
     padding: 71px 0 61px
@@ -509,7 +509,7 @@ legend, td, th {
 }
 
 .exp-items__circular {
-    background: url(images//general/round.png) no-repeat 0 0;
+    background: url(images/general/round3.png) no-repeat 0 0;
     background-size: cover
 }
 
@@ -569,7 +569,7 @@ legend, td, th {
 
 .dosc {
     padding: 65px 0 64px;
-    background: url(images//general/bg_docs.jpg) no-repeat center 0;
+    background: url(images/general/docum_fon.jpg) no-repeat center 0;
     background-size: cover
 }
 
@@ -875,7 +875,7 @@ legend, td, th {
 }
 
 .projects {
-    background: url(images//content/project-sec.jpg) no-repeat center 0;
+    background: url(images/general/proj_sec1-min.jpg) no-repeat center 0;
     padding: 68px 0 76px;
     background-size: cover
 }
@@ -986,11 +986,14 @@ legend, td, th {
 }
 
 .hard-quest {
-    background: url(images//general/hard-quest.jpg) no-repeat center 0
+    background: url(images/general/proj_sec2-min.jpg) no-repeat center 0
 }
 
 .build-withkey {
-    background: url(images//content/list-bg.jpg) no-repeat center 0
+    background: url(images/general/manufuc.jpg) no-repeat center 0
+}
+section.build-withkey_onbuildpage {
+  background: url(images/general/list-bg_new.jpg) no-repeat center 0
 }
 
 .sect-one__list_hard-quest {
@@ -1243,7 +1246,7 @@ legend, td, th {
 }
 
 .garanty-sec {
-    background: url(images//content/garanti-bg.jpg) no-repeat center 0;
+    background: url(images/general/garanti-bg_new.jpg) no-repeat center 0;
     padding: 67px 0 41px;
     background-size: cover;
     text-align: center;
@@ -2037,33 +2040,29 @@ legend, td, th {
     }
 
     .exp-items__species-white-line.MWT1 {
-        right: -142px;
-        top: 166px;
-        -webkit-transform: rotate(26deg);
-        transform: rotate(26deg)
+            right: -180px;
+    top: 132px;
+    width: 182px;
     }
 
     .exp-items__species-white-line.MWT1-10 {
-        left: -143px;
-        top: 167px;
-        -webkit-transform: rotate(-26deg);
-        transform: rotate(-26deg)
+           right: 272px;
+        top: 132px;
+        width: 182px;
     }
 
     .exp-items__species-white-line.MWT10-25MWT {
-        right: -147px;
-        top: 79px;
-        -webkit-transform: rotate(-32deg);
-        transform: rotate(-32deg);
-        width: 160px
-    }
+      right: -222px;
+      top: 142px;
+      width: 223px;
+   }
 
     .exp-items__species-white-line.more25MWT {
-        right: 260px;
-        top: 81px;
-        -webkit-transform: rotate(35deg);
-        transform: rotate(35deg);
-        width: 160px
+        right: 272px;
+    top: 144px;
+    /* -webkit-transform: rotate(35deg); */
+    /* transform: rotate(35deg); */
+    width: 229px;
     }
 
     .exp-items__btn_red {
@@ -5835,8 +5834,16 @@ legend, td, th {
     font-size: 18px
 }
 
-.footer__logo-pic {
-    margin-bottom: 41px
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 41px;
+    color: transparent;
+}
+
+.footer__logotext {
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
 }
 
 .footer__text-under-logo {
